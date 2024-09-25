@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", system-ui;
+    font-size: small;
+}
+.form-group{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+
+
+
+
+}
+:-ms-input-placeholder{
+    padding: 10px;
+}
+input[type=date] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    text-align: center;
+    border-radius: 5px;
+    font-size: x-small;
+  }
+  .top-form{
+    background-color: aliceblue;
+    padding: 16px;
+  }
+
+  .btn{
+    width: 100%;
+  }
