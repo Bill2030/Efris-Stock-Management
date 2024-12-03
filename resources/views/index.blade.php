@@ -45,12 +45,9 @@
                 <td>{{date('Y-m-d',strtotime($product->batchDate))}}</td>
                 <td>{{ $product->supplierName }}</td>
                 <td>{{ $product->referenceNumber }}</td>
-
-                
             </tr>
             @endforeach
         </tbody>
-
     </table>
     </div>
  
