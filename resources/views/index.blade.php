@@ -3,25 +3,24 @@
 @section('content')
 
 <div class="container">
-    <h1 class="text-center p-4">Efris Stock Updation Status</h1>
+    <h3 class="text-center p-4">Efris Stock Updation Status</h3>
     <hr>
     <div class="top-form">
-        <h3>MFI International</h3>
+        <h3 class="text-center">MFI International</h3>
     </div>
     <hr>
     <form action="{{ route('filter') }}" method="GET">
         <div class="form-group">
             <div class="col-md-3">
                 <label for="">Search Using Date</label class='form-group'>
-                <input type="date" name="batchDate" class="form-control">
+                <input type="date" name="batchDate" class="form-control" value="{{ old('batchDate') }}">
             </div>
             <div class="col-md-1 pt-4">
                 <button class="btn btn-primary" type="submit">Submit</button>
             </div>
         </div>
-
-
     </form>
+   
     <table class="table table-striped mt-6 mb-6">
         <thead>
             <tr>
@@ -47,7 +46,7 @@
                 <td>{{ $product->supplierName }}</td>
                 <td>{{ $product->referenceNumber }}</td>
 
-
+                
             </tr>
             @endforeach
         </tbody>
@@ -55,7 +54,7 @@
     </table>
     </div>
  
-
+{{ $products->links('pagination::bootstrap-5') }}
 </div>
 
 @endsection

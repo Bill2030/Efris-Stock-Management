@@ -20,7 +20,7 @@ class ProductController extends Controller
 
 
         $batchdate = Carbon::parse($request->batchDate);
-        $products = Product::where("batchDate", $batchdate)->paginate(8);
+        $products = Product::where("batchDate", $batchdate)->paginate();
         //dd($products);
 
         return view("index", compact("products"));
